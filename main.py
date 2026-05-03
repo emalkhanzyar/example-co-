@@ -14,6 +14,9 @@ Enjoy it!
 """)
 
 
-
 df = pandas.DataFrame(data)
+st.line_chart(data)
+st.area_chart(data)
+myslider = st.slider('Celsius')
+st.write(myslider, 'in Fahrenheit is', myslider * 9/5 + 32)
 st.write(df)
